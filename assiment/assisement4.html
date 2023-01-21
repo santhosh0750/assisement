@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assisement4</title>
+</head>
+
+<body>
+    <form id="form">
+      <label>username</label>
+      <input id="name" type="text" placeholder="name" required />
+      <label for="password">password</label>
+      <input id="password" type="password" placeholder="password" required />
+      <br/>
+      <span id="message"></span>
+      <input type="button" onclick="valud()" value="submit" />
+    </form>
+    <script>
+    
+      function valud() {
+
+        const user = document.getElementById('name').value
+        const word = document.getElementById('password').value
+        let demo=[];
+        if (user != "admin" && word != 'admin') {
+          demo=("invalid user id ")
+        }
+        else (user == "admin" && word == 'admin')
+         {
+          demo=("log in sucess")
+        }
+        document.getElementById("message").innerHTML = demo;
+
+      }
+      
+
+    </script>
+</body>
+
+</html>

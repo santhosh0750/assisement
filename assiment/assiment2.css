@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    background-image: url("https://image.shutterstock.com/image-photo/empty-palm-shadow-blue-color-260nw-1933291289.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+.regform {
+    width: 500px;
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+   
+}
+
+.main {
+    width: 500px;
+    background-color:rgba(0, 0, 0, 0.25) ;
+    margin: auto;
+}
+
+.name {
+    margin-left: 5px;
+    margin-top: 30px;
+    width: 125px;
+    color:white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* dob */
+.company {
+    position: relative;
+    left: 120px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    border-color: red;
+}
+.option{
+    position: relative;
+    left: 120px;
+    top: -37px;
+    line-height: 40px;
+    width: 232px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+
+
+button{
+    background-color:blue;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center
+};

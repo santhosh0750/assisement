@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 500px;
+        }
+        th{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>MOBILE</th>
+            <th>EMAIL</th>
+        </tr>
+        <tbody id="mytable">
+
+        </tbody>
+    </table>
+    <script>
+        const data = [
+            {
+                id: 1,
+                name: "name 1",
+                mobile: "mobile 1",
+                email: "email 1"
+
+            },
+            {
+                id: 2,
+                name: "name 2",
+                mobile: "mobile 2",
+                email: "email 2"
+
+            },
+            {
+                id: 3,
+                name: "name 3",
+                mobile: "mobile 3",
+                email: "email 3"
+
+            },
+            {
+                id: 4,
+                name: "name 4",
+                mobile: "mobile 4",
+                email: "email 4"
+
+            },
+            {
+                id: 5,
+                name: "name 5",
+                mobile: "mobile 5",
+                email: "email 6"
+
+            },
+            {
+                id: 6,
+                name: "name 6",
+                mobile: "mobile 6",
+                email: "email 6"
+
+            },
+            {
+                id: 7,
+                name: "name 7",
+                mobile: "mobile 7",
+                email: "email 7"
+
+            },
+            {
+                id: 8,
+                name: "name 8",
+                mobile: "mobile 8",
+                email: "email 9"
+
+            }
+        ]
+        creatdata(data)
+        function creatdata(data) {
+            var table = document.getElementById('mytable')
+            for (i = 0; i < data.length; i++) {
+                var row = `<tr>
+             <td>${data[i].id}</td>
+            <td>${data[i].name}</td>
+            <td>${data[i].mobile}</td>
+            <td>${data[i].email}</td>
+            
+            </tr>`
+                table.innerHTML +=  row
+            }
+
+        }
+    </script>
+</body>
+
+</html>
